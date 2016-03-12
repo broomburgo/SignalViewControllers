@@ -20,11 +20,15 @@ extension Classification: CustomStringConvertible {
   }
 }
 
-class SelectionPage: UIViewController {
+class SelectionPage: UIViewController, SelectionController {
   private let selectionEmitter = Emitter<Classification>()
 
   var signalSelection: Signal<Classification> {
     return selectionEmitter.signal
+  }
+
+  var page: UIViewController {
+    return self
   }
 
   @IBAction func didTapClassificationButton(sender: UIButton) {

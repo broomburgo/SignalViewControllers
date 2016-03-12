@@ -19,35 +19,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxk-ie-204">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                             <state key="normal" title="Really good"/>
                             <connections>
                                 <action selector="didTapClassificationButton:" destination="-1" eventType="touchUpInside" id="FXT-fR-bqE"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErT-Q0-USZ">
-                            <rect key="frame" x="0.0" y="120" width="600" height="120"/>
-                            <state key="normal" title="Good"/>
-                            <connections>
-                                <action selector="didTapClassificationButton:" destination="-1" eventType="touchUpInside" id="8vi-KA-gu2"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjP-xi-jwP">
-                            <rect key="frame" x="0.0" y="240" width="600" height="120"/>
-                            <state key="normal" title="So and so"/>
-                            <connections>
-                                <action selector="didTapClassificationButton:" destination="-1" eventType="touchUpInside" id="hoi-4j-IwW"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpi-Vr-7Zy">
-                            <rect key="frame" x="0.0" y="360" width="600" height="120"/>
-                            <state key="normal" title="Bad"/>
-                            <connections>
-                                <action selector="didTapClassificationButton:" destination="-1" eventType="touchUpInside" id="Yjf-gi-WWe"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kz-S5-h5I">
-                            <rect key="frame" x="0.0" y="480" width="600" height="120"/>
+                            <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                             <state key="normal" title="Very bad"/>
                             <connections>
                                 <action selector="didTapClassificationButton:" destination="-1" eventType="touchUpInside" id="QGi-XK-BqX"/>
@@ -64,7 +43,7 @@
                 <constraint firstItem="J3a-Xp-gnz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bWg-CT-N2G"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <point key="canvasLocation" x="901" y="468"/>
+            <point key="canvasLocation" x="260" y="427"/>
         </view>
     </objects>
 </document>

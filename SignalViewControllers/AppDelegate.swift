@@ -8,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     window = UIWindow(frame: UIScreen.mainScreen().bounds)
     let page = ViewController()
-    page.selectionPageFactory = SelectionPageFactory()
+    page.selectionControllerFactory = SelectionControllerFactory()
     page.title = "Leave a feedback for the movie"
     let navController = UINavigationController(rootViewController: page)
     navController.navigationBar.translucent = false

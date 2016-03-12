@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="SignalViewControllers" customModuleProvider="target">
             <connections>
                 <outlet property="feedbackLabel" destination="Utq-Vb-EKI" id="Jij-sN-rED"/>
+                <outlet property="polarizedSelector" destination="mMD-Zl-biS" id="nqw-kF-OkS"/>
                 <outlet property="view" destination="iN0-l3-epB" id="W6q-3B-QEf"/>
             </connections>
         </placeholder>
@@ -29,15 +30,27 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mMD-Zl-biS">
+                    <rect key="frame" x="180" y="169" width="240" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="GqX-oM-oEB"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Average"/>
+                        <segment title="Polarized"/>
+                    </segments>
+                </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="IQf-6G-ucc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Fot-ND-B1O"/>
                 <constraint firstItem="IQf-6G-ucc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YN2-dH-RlC"/>
                 <constraint firstItem="Utq-Vb-EKI" firstAttribute="centerX" secondItem="IQf-6G-ucc" secondAttribute="centerX" id="dKw-XW-wtd"/>
+                <constraint firstItem="IQf-6G-ucc" firstAttribute="top" secondItem="mMD-Zl-biS" secondAttribute="bottom" constant="88" id="nIq-T2-0kl"/>
                 <constraint firstItem="Utq-Vb-EKI" firstAttribute="top" secondItem="IQf-6G-ucc" secondAttribute="bottom" constant="88" id="sXs-zW-e0x"/>
+                <constraint firstItem="IQf-6G-ucc" firstAttribute="centerX" secondItem="mMD-Zl-biS" secondAttribute="centerX" id="vbU-E3-Un9"/>
             </constraints>
-            <point key="canvasLocation" x="499" y="496"/>
+            <point key="canvasLocation" x="320" y="382"/>
         </view>
     </objects>
 </document>

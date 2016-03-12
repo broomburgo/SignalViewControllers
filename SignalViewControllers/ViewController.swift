@@ -2,9 +2,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  var selectionPageFactory: SelectionPageFactory? {
+  var selectionControllerFactory: SelectionControllerFactory? {
     didSet {
-      guard let factory = selectionPageFactory else { return }
+      guard let factory = selectionControllerFactory else { return }
       factory.signalMakePage
         .flatMap { $0.signalSelection }
         .onReception § always § doAll § [
@@ -26,9 +26,20 @@ class ViewController: UIViewController {
 
   @IBOutlet weak var feedbackLabel: UILabel?
 
+  @IBOutlet weak var polarizedSelector: UISegmentedControl? {
+    didSet {
+      polarizedSelector?.selectedSegmentIndex = 0
+    }
+  }
+
   @IBAction func didTapLeaveFeedbackButton(sender: UIButton) {
-    guard let factory = selectionPageFactory else { return }
+    guard let factory = selectionControllerFactory else { return }
+    guard let selector = polarizedSelector else { return }
     navigationController?.pushViewController(
-      factory.makePageWithTitle("The movie was..."), animated: true)
+      factory.makePage(
+        title: "The movie was...",
+        polarized: selector.selectedSegmentIndex == 1)
+        .page,
+      animated: true)
   }
 }
