@@ -15,8 +15,8 @@ class MainPage: UIViewController {
 
   init(feedbackModelController: ModelController<FeedbackModel>) {
     super.init(nibName: nil, bundle: nil)
-    feedbackModelController.updateSignal.onReception § always § updateViewsWithFeedbackModel
-    viewReadyEmitter.signal.onReception § always § feedbackModelController.notify
+    feedbackModelController.updateSignal.onReception § eachTime § updateViewsWithFeedbackModel
+    viewReadyEmitter.signal.onReception § eachTime § feedbackModelController.notify
   }
 
   required init?(coder aDecoder: NSCoder) {

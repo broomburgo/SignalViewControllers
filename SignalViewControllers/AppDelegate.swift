@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       feedbackModelController: feedbackModelController)
 
     feedbackCollector = FeedbackCollector(pageFactory: pageFactory)
-    feedbackCollector.collectFeedbackModelChange().onReception § always § feedbackModelController.transform
+    feedbackCollector.collectFeedbackModelChange().onReception § eachTime § feedbackModelController.transform
 
     let navController = UINavigationController()
     navController.navigationBar.translucent = false
@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     feedbackModelController.deltaSignal
       .filter { $0.feedback.rawValue < $1.feedback.rawValue}
       .filter { $1.feedback == .Good || $1.feedback == .ReallyGood }
-      .onReception § always § inAnyCase { [weak self] in
+      .onReception § eachTime § inAnyCase { [weak self] in
         guard let this = self else { return }
         this.navigationHandler.presentAlertController(thankYouAlertController, completionSignal: completionEmitter.signal)
     }

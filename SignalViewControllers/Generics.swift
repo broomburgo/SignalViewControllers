@@ -12,7 +12,7 @@ func once<T>(callback: T -> ()) -> T -> Persistence {
   }
 }
 
-func always<T>(callback: T -> ()) -> T -> Persistence {
+func eachTime<T>(callback: T -> ()) -> T -> Persistence {
   return {
     callback($0)
     return .Continue

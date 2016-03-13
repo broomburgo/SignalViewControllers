@@ -9,11 +9,11 @@ class NavigationHandler {
 
     pageFactory.signalMakeMainPage
       .flatMap { $0.signalLeaveFeedback }
-      .onReception § always § inAnyCase § presentSelectionPage
+      .onReception § eachTime § inAnyCase § presentSelectionPage
 
     pageFactory.signalMakeSelectionPage
       .flatMap { $0.signalSelection }
-      .onReception § always § inAnyCase § popTopPage
+      .onReception § eachTime § inAnyCase § popTopPage
   }
 
   private let transitionEndEmitter = Emitter<()>()
