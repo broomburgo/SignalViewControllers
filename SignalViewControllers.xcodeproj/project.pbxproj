@@ -7,32 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3869F41A1C95BBA400C6F6B3 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869F4191C95BBA400C6F6B3 /* ModelController.swift */; };
+		3869F41C1C95BC9D00C6F6B3 /* FeedbackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869F41B1C95BC9D00C6F6B3 /* FeedbackModel.swift */; };
+		3869F41E1C95C7EE00C6F6B3 /* NavigationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869F41D1C95C7EE00C6F6B3 /* NavigationHandler.swift */; };
+		3869F4201C95CA0800C6F6B3 /* FeedbackCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869F41F1C95CA0800C6F6B3 /* FeedbackCollector.swift */; };
 		3874C6481C947FE50099AE3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874C6471C947FE50099AE3E /* AppDelegate.swift */; };
-		3874C64A1C947FE50099AE3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874C6491C947FE50099AE3E /* ViewController.swift */; };
+		3874C64A1C947FE50099AE3E /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874C6491C947FE50099AE3E /* MainPage.swift */; };
 		3874C6521C947FE50099AE3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3874C6501C947FE50099AE3E /* LaunchScreen.storyboard */; };
 		3893C8A01C9480DC00D55DE7 /* Signal+Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3893C89F1C9480DC00D55DE7 /* Signal+Emitter.swift */; };
 		3893C8A21C94811A00D55DE7 /* SelectionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3893C8A11C94811A00D55DE7 /* SelectionPage.swift */; };
 		3893C8A41C94814400D55DE7 /* AverageSelectionPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3893C8A31C94814400D55DE7 /* AverageSelectionPage.xib */; };
-		3893C8A61C94833200D55DE7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3893C8A51C94833200D55DE7 /* ViewController.xib */; };
-		3893C8A81C94935500D55DE7 /* SelectionPageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3893C8A71C94935500D55DE7 /* SelectionPageFactory.swift */; };
+		3893C8A61C94833200D55DE7 /* MainPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3893C8A51C94833200D55DE7 /* MainPage.xib */; };
+		3893C8A81C94935500D55DE7 /* PageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3893C8A71C94935500D55DE7 /* PageFactory.swift */; };
 		3893C8AA1C94C75E00D55DE7 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3893C8A91C94C75E00D55DE7 /* Generics.swift */; };
-		3893C8AC1C94CE0600D55DE7 /* SelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3893C8AB1C94CE0600D55DE7 /* SelectionController.swift */; };
 		3893C8AE1C94CF9300D55DE7 /* PolarizedSelectionPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3893C8AD1C94CF9300D55DE7 /* PolarizedSelectionPage.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3869F4191C95BBA400C6F6B3 /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		3869F41B1C95BC9D00C6F6B3 /* FeedbackModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackModel.swift; sourceTree = "<group>"; };
+		3869F41D1C95C7EE00C6F6B3 /* NavigationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationHandler.swift; sourceTree = "<group>"; };
+		3869F41F1C95CA0800C6F6B3 /* FeedbackCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackCollector.swift; sourceTree = "<group>"; };
 		3874C6441C947FE50099AE3E /* SignalViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignalViewControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3874C6471C947FE50099AE3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3874C6491C947FE50099AE3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3874C6491C947FE50099AE3E /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		3874C6511C947FE50099AE3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3874C6531C947FE50099AE3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3893C89F1C9480DC00D55DE7 /* Signal+Emitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Signal+Emitter.swift"; sourceTree = "<group>"; };
 		3893C8A11C94811A00D55DE7 /* SelectionPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionPage.swift; sourceTree = "<group>"; };
 		3893C8A31C94814400D55DE7 /* AverageSelectionPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AverageSelectionPage.xib; sourceTree = "<group>"; };
-		3893C8A51C94833200D55DE7 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		3893C8A71C94935500D55DE7 /* SelectionPageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionPageFactory.swift; sourceTree = "<group>"; };
+		3893C8A51C94833200D55DE7 /* MainPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPage.xib; sourceTree = "<group>"; };
+		3893C8A71C94935500D55DE7 /* PageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageFactory.swift; sourceTree = "<group>"; };
 		3893C8A91C94C75E00D55DE7 /* Generics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
-		3893C8AB1C94CE0600D55DE7 /* SelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionController.swift; sourceTree = "<group>"; };
 		3893C8AD1C94CF9300D55DE7 /* PolarizedSelectionPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PolarizedSelectionPage.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,16 +74,19 @@
 			children = (
 				3874C6531C947FE50099AE3E /* Info.plist */,
 				3874C6471C947FE50099AE3E /* AppDelegate.swift */,
+				3869F41F1C95CA0800C6F6B3 /* FeedbackCollector.swift */,
+				3869F41B1C95BC9D00C6F6B3 /* FeedbackModel.swift */,
 				3893C8A91C94C75E00D55DE7 /* Generics.swift */,
+				3874C6491C947FE50099AE3E /* MainPage.swift */,
+				3869F4191C95BBA400C6F6B3 /* ModelController.swift */,
+				3869F41D1C95C7EE00C6F6B3 /* NavigationHandler.swift */,
+				3893C8A71C94935500D55DE7 /* PageFactory.swift */,
 				3893C8A11C94811A00D55DE7 /* SelectionPage.swift */,
-				3893C8A71C94935500D55DE7 /* SelectionPageFactory.swift */,
 				3893C89F1C9480DC00D55DE7 /* Signal+Emitter.swift */,
-				3874C6491C947FE50099AE3E /* ViewController.swift */,
 				3893C8A31C94814400D55DE7 /* AverageSelectionPage.xib */,
+				3893C8A51C94833200D55DE7 /* MainPage.xib */,
 				3893C8AD1C94CF9300D55DE7 /* PolarizedSelectionPage.xib */,
-				3893C8A51C94833200D55DE7 /* ViewController.xib */,
 				3874C6501C947FE50099AE3E /* LaunchScreen.storyboard */,
-				3893C8AB1C94CE0600D55DE7 /* SelectionController.swift */,
 			);
 			path = SignalViewControllers;
 			sourceTree = "<group>";
@@ -142,7 +151,7 @@
 			files = (
 				3893C8AE1C94CF9300D55DE7 /* PolarizedSelectionPage.xib in Resources */,
 				3874C6521C947FE50099AE3E /* LaunchScreen.storyboard in Resources */,
-				3893C8A61C94833200D55DE7 /* ViewController.xib in Resources */,
+				3893C8A61C94833200D55DE7 /* MainPage.xib in Resources */,
 				3893C8A41C94814400D55DE7 /* AverageSelectionPage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,11 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3874C64A1C947FE50099AE3E /* ViewController.swift in Sources */,
-				3893C8AC1C94CE0600D55DE7 /* SelectionController.swift in Sources */,
+				3869F4201C95CA0800C6F6B3 /* FeedbackCollector.swift in Sources */,
+				3869F41C1C95BC9D00C6F6B3 /* FeedbackModel.swift in Sources */,
+				3874C64A1C947FE50099AE3E /* MainPage.swift in Sources */,
 				3893C8A21C94811A00D55DE7 /* SelectionPage.swift in Sources */,
-				3893C8A81C94935500D55DE7 /* SelectionPageFactory.swift in Sources */,
+				3893C8A81C94935500D55DE7 /* PageFactory.swift in Sources */,
 				3893C8AA1C94C75E00D55DE7 /* Generics.swift in Sources */,
+				3869F41A1C95BBA400C6F6B3 /* ModelController.swift in Sources */,
+				3869F41E1C95C7EE00C6F6B3 /* NavigationHandler.swift in Sources */,
 				3874C6481C947FE50099AE3E /* AppDelegate.swift in Sources */,
 				3893C8A01C9480DC00D55DE7 /* Signal+Emitter.swift in Sources */,
 			);

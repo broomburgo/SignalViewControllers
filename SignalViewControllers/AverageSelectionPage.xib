@@ -18,25 +18,25 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="J3a-Xp-gnz">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
-                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErT-Q0-USZ">
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErT-Q0-USZ">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                             <state key="normal" title="Good"/>
                             <connections>
-                                <action selector="didTapClassificationButton:" destination="-1" eventType="touchUpInside" id="8vi-KA-gu2"/>
+                                <action selector="didTapFeedbackButton:" destination="-1" eventType="touchUpInside" id="olo-No-nn3"/>
                             </connections>
                         </button>
                         <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjP-xi-jwP">
                             <rect key="frame" x="0.0" y="200" width="600" height="200"/>
                             <state key="normal" title="So and so"/>
                             <connections>
-                                <action selector="didTapClassificationButton:" destination="-1" eventType="touchUpInside" id="hoi-4j-IwW"/>
+                                <action selector="didTapFeedbackButton:" destination="-1" eventType="touchUpInside" id="AwV-rE-Bgj"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpi-Vr-7Zy">
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpi-Vr-7Zy">
                             <rect key="frame" x="0.0" y="400" width="600" height="200"/>
                             <state key="normal" title="Bad"/>
                             <connections>
-                                <action selector="didTapClassificationButton:" destination="-1" eventType="touchUpInside" id="Yjf-gi-WWe"/>
+                                <action selector="didTapFeedbackButton:" destination="-1" eventType="touchUpInside" id="Xvd-ZF-IlX"/>
                             </connections>
                         </button>
                     </subviews>

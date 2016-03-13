@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="SignalViewControllers" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainPage" customModule="SignalViewControllers" customModuleProvider="target">
             <connections>
                 <outlet property="feedbackLabel" destination="Utq-Vb-EKI" id="Jij-sN-rED"/>
                 <outlet property="polarizedSelector" destination="mMD-Zl-biS" id="nqw-kF-OkS"/>
@@ -39,6 +39,9 @@
                         <segment title="Average"/>
                         <segment title="Polarized"/>
                     </segments>
+                    <connections>
+                        <action selector="didChangePolarizedSelector:" destination="-1" eventType="valueChanged" id="VOe-hJ-Ql8"/>
+                    </connections>
                 </segmentedControl>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

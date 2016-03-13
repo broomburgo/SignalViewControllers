@@ -37,6 +37,32 @@ public final class Signal<Subtype> {
     }
     return mappedSignal
   }
+
+  public func filter(predicate: Subtype -> Bool) -> Signal {
+    let filteredSignal = Signal<Subtype>()
+    onReception {
+      if predicate($0) {
+        filteredSignal.send($0)
+      }
+      return .Continue
+    }
+    return filteredSignal
+  }
+
+  public func unionWith (otherSignal: Signal<Subtype>) -> Signal {
+    let unifiedSignal = Signal<Subtype>()
+    let observeFunction = { (value: Subtype) -> Persistence in
+      unifiedSignal.send(value)
+      return .Continue
+    }
+    onReception(observeFunction)
+    otherSignal.onReception(observeFunction)
+    return unifiedSignal
+  }
+}
+
+public func + <Subtype> (left: Signal<Subtype>, right: Signal<Subtype>) -> Signal<Subtype> {
+  return left.unionWith(right)
 }
 
 extension Signal {

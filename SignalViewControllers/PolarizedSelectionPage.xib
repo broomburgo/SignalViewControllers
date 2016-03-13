@@ -18,18 +18,18 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="J3a-Xp-gnz">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
-                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxk-ie-204">
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxk-ie-204">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                             <state key="normal" title="Really good"/>
                             <connections>
-                                <action selector="didTapClassificationButton:" destination="-1" eventType="touchUpInside" id="FXT-fR-bqE"/>
+                                <action selector="didTapFeedbackButton:" destination="-1" eventType="touchUpInside" id="FXT-fR-bqE"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kz-S5-h5I">
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kz-S5-h5I">
                             <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                             <state key="normal" title="Very bad"/>
                             <connections>
-                                <action selector="didTapClassificationButton:" destination="-1" eventType="touchUpInside" id="QGi-XK-BqX"/>
+                                <action selector="didTapFeedbackButton:" destination="-1" eventType="touchUpInside" id="QGi-XK-BqX"/>
                             </connections>
                         </button>
                     </subviews>
