@@ -33,18 +33,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
 
   private func handleGoodFeedbacksWithAlert() {
+    feedbackModelController.deltaSignal
+      .filter { $0.feedback.rawValue < $1.feedback.rawValue}
+      .filter { $1.feedback == .Good || $1.feedback == .ReallyGood }
+      .onReception § eachTime § inAnyCase § showThankYouAlert
+  }
+
+  private func showThankYouAlert() {
     let thankYouAlertController = UIAlertController(title: "Thank You!", message: nil, preferredStyle: .Alert)
     let completionEmitter = Emitter<()>()
     thankYouAlertController.addAction § UIAlertAction(title: "OK", style: .Default) { _ in
       completionEmitter.emit()
     }
-    feedbackModelController.deltaSignal
-      .filter { $0.feedback.rawValue < $1.feedback.rawValue}
-      .filter { $1.feedback == .Good || $1.feedback == .ReallyGood }
-      .onReception § eachTime § inAnyCase { [weak self] in
-        guard let this = self else { return }
-        this.navigationHandler.presentAlertController(thankYouAlertController, completionSignal: completionEmitter.signal)
-    }
+    navigationHandler.presentAlertController(thankYouAlertController, completionSignal: completionEmitter.signal)
   }
 }
 

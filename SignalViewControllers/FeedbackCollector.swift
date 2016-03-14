@@ -6,15 +6,12 @@ class FeedbackCollector {
     self.pageFactory = pageFactory
   }
 
-//  private var currentSignal = Signal<FeedbackModelChange>()
-
   func collectFeedbackModelChange() -> Signal<FeedbackModelChange> {
-    let currentSignal = pageFactory.signalMakeMainPage
+    return pageFactory.signalMakeMainPage
       .flatMap { $0.signalPolarizedChanged }
       .map(FeedbackModel.transformWithPolarized)
       + pageFactory.signalMakeSelectionPage
         .flatMap { $0.signalSelection }
         .map(FeedbackModel.transformWithFeedback)
-    return currentSignal
   }
 }
